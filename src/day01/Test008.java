@@ -14,7 +14,7 @@ public class Test008 {
 		loc = loc + 30;
 		System.out.println(loc);
 		
-		loc = loc + 24;d
+		loc = loc + 24;
 		System.out.println(loc);
 	}
 }
