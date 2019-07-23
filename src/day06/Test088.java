@@ -53,6 +53,10 @@ public class Test088 {
                 l = new LinkedList<Score>();
                 System.out.println("새 자료 생성 완료");
             } else if (choice.equals("2")) {
+                if (l == null) {
+                    System.out.println("새 자료를 먼저 생성해주세요.");
+                    continue;
+                }
                 System.out.println("입력할 정보를 학번,점수 형식으로 입력하세요.");
 
                 String[] str = br.readLine().split(",");
@@ -60,6 +64,10 @@ public class Test088 {
                 System.out.println(score.toString());
                 l.add(score);
             } else if (choice.equals("3")) {
+                if (l == null) {
+                    System.out.println("새 자료를 먼저 생성해주세요.");
+                    continue;
+                }
                 System.out.println("저장할 파일 명을 입력하세요.");
                 String fileName = br.readLine();
                 Writer out = new OutputStreamWriter( new FileOutputStream(fileName) );
